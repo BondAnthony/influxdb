@@ -1,0 +1,43 @@
+@import "src/style/modules";
+
+.variable-toolbar {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: $g3-castle;
+    font-size: 13px;
+  }
+
+  .variables-toolbar--list {
+    padding-bottom: $ix-marg-a;
+  }
+
+
+.variables-toolbar--function {
+  position: relative;
+}
+
+.variables-toolbar--container {
+  dt, dd {
+    height: 30px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+  }
+
+  dt {
+    background-color: $g6-smoke;
+    font-weight: 600;
+    color: $g18-cloud;
+  }
+
+  dd {
+    font-family: "RobotoMono", monospace;
+    cursor: pointer;
+  }
+
+  dd:hover, dd:active {
+    background-color: $g4-onyx;
+    color: $c-laser;
+  }
+}
